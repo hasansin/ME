@@ -1,0 +1,15 @@
+a {
+  padding: 10px;
+
+  background-color: darkblue;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: 50px;
+}

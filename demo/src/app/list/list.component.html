@@ -1,0 +1,79 @@
+<div class="header">
+  <h1>List of items</h1>
+</div>
+
+<div class="list">
+  <table class="table">
+    <thead>
+      <tr class="head">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let product of Products">
+      <tr class="bodys">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          <button (click)="delete(product.id)" class="bttn">Delete</button>
+        </td>
+        <td>
+          <button (click)="update(product.id)" class="bttn1">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="IsSelected">
+  <div class="header">
+    <h1>Update form</h1>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="name">Product Name: </label>
+        <input
+          [(ngModel)]="product.name"
+          required
+          minlength="10"
+          type="text"
+          name="name"
+          class="form-control"
+        />
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="quantity">Quantity :</label>
+        <input
+          required
+          [(ngModel)]="product.quantity"
+          type="number"
+          name="quantity"
+          class="form-control"
+        />
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="price">Product Price :</label>
+        <input
+          required
+          [(ngModel)]="product.price"
+          type="number"
+          name="price"
+          class="form-control"
+        />
+      </div>
+      <pre></pre>
+      <button (click)="UpdateItem()" class="bttn2" type="submit">Update</button>
+    </form>
+  </div>
+</div>

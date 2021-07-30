@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand";
+}
+.list {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 75px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5;
+  font-family: "Quicksand";
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table .head {
+  background-color: #24346a;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.table td {
+  width: 250px;
+  height: 50px;
+  padding: 10px auto;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 15px;
+}
+
+.bodys {
+  background-color: #d8e0df;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  font-family: "Quicksand";
+  font-weight: bold;
+  text-align: center;
+}
+
+.bodys:hover {
+  font-weight: bolder;
+  background-color: whitesmoke;
+  color: #999b9b;
+}
+.table:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bttn {
+  border: none;
+  padding: 9px 40px;
+  background-color: #24346a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+.bttn:hover {
+  color: #999b9b;
+  background-color: #284fcf;
+}
+
+.bttn1 {
+  border: none;
+  padding: 9px 40px;
+  background-color: rgb(196, 58, 58);
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+.bttn1:hover {
+  color: #999b9b;
+  background-color: rgb(211, 146, 146);
+}
+
+.frm {
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand";
+}
+
+form {
+  background-color: gainsboro;
+  width: 500px;
+  padding: 75px;
+  font-family: "Quicksand";
+  border-radius: 25px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+label {
+  float: left;
+  margin: 10px;
+  width: 150px;
+  font-family: "Quicksand";
+}
+
+.form-group {
+  width: 450px;
+}
+
+.danger {
+  color: red;
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  float: right;
+  margin-left: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.bttn2 {
+  margin-top: 20px;
+  background-color: rgb(197, 82, 82);
+  margin-left: 135px;
+  border: none;
+  padding: 9px 40px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
